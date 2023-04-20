@@ -1,4 +1,12 @@
 # Starter pipeline
+- task: UniversalPackages@0
+  inputs:
+    command: 'download'
+    downloadDirectory: '$(System.DefaultWorkingDirectory)'
+    feedsToUse: 'internal'
+    vstsFeed: 'f8cb1790-dc3f-4180-a952-6f2ac74916a5/63c9d079-01f8-472c-9251-dfdf6e8b6e63'
+    vstsFeedPackage: '628052a0-0f73-4ec8-bc01-9249ab495d2a'
+    vstsPackageVersion: '0.0.2'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
