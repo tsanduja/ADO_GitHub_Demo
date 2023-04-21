@@ -25,7 +25,7 @@ steps:
 - download: echo Download starts
   artifact: jmeter
   displayName: Download artifact
-  target: C:\Users\tsanduja\Downloads
+  target: 'C:\Users\tsanduja\Downloads'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
