@@ -21,7 +21,8 @@ steps:
 - task: DownloadGitHubRelease@0
   inputs:
     connection: 'tsanduja'
-    userRepository: https://github.com/tsanduja/ADO_GitHub_Demo.git
+    userRepository: 'https://github.com/tsanduja/ADO_GitHub_Demo.git'
+    version: 1.0.0
     defaultVersionType: 'latest'
     downloadPath: '$(System.ArtifactsDirectory)'
 - script: echo Hello, world!
