@@ -18,6 +18,12 @@ steps:
     vstsFeed: 'f8cb1790-dc3f-4180-a952-6f2ac74916a5/63c9d079-01f8-472c-9251-dfdf6e8b6e63'
     vstsFeedPackage: '628052a0-0f73-4ec8-bc01-9249ab495d2a'
     vstsPackageVersion: '0.0.2'
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'tsanduja'
+    userRepository: https://github.com/tsanduja/ADO_GitHub_Demo.git
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
