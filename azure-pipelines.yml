@@ -22,7 +22,7 @@ steps:
   inputs:
     connection: 'tsanduja'
     userRepository: 'https://github.com/tsanduja/ADO_GitHub_Demo.git'
-    version: 1.0.0
+    version: '1.0.0'
     defaultVersionType: 'latest'
     downloadPath: '$(System.ArtifactsDirectory)'
 - script: echo Hello, world!
