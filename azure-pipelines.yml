@@ -22,6 +22,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- download: echo Download starts
+  artifact: jmeter
+  displayName: Download artifact
+  target: C:\Users\tsanduja\Downloads
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
