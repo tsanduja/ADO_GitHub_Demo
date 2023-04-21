@@ -22,7 +22,7 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: git pull
+- script: git pull origin main
   displayName: 'pull the code'
 
 - script: |
