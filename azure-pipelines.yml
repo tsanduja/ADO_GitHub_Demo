@@ -25,11 +25,12 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: cd C:\Users\tsanduja\Desktop\ADO_Scripts
-  displayName: 'change to scripts directory'
+# - script: cd C:\Users\tsanduja\Desktop\ADO_Scripts
+#   displayName: 'change to scripts directory'
 
-- script: cd C:\Users\tsanduja\Desktop\ADO_Scripts && git clone origin main 
+- script: git clone origin main 
   displayName: 'pull the code'
+  workingDirectory: 'C:\Users\tsanduja\Desktop\ADO_Scripts'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
