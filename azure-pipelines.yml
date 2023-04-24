@@ -28,7 +28,7 @@ steps:
 - script: cd C:\Users\tsanduja\Desktop\ADO_Scripts
   displayName: 'change to scripts directory'
 
-- script: git pull origin main 
+- script: git pull origin main C:\Users\tsanduja\Desktop\ADO_Scripts .
   displayName: 'pull the code'
 
 - script: |
