@@ -33,7 +33,7 @@ steps:
   # workingDirectory: 'C:\Users\tsanduja\Desktop\ADO_Scripts'
 
 - script: cp -r ~/. C:/Users/tsanduja/Desktop/ADO_Scripts
-  displayName: 'pull the code'
+  displayName: 'copy the code to required directory'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
