@@ -13,24 +13,20 @@ pool:
     - agent.name -equals tsanduja
 
 steps:
-# - task: UniversalPackages@0
-#   inputs:
-#     command: 'download'
-#     downloadDirectory: 'C:\Users\tsanduja\Desktop\jmeter dummy'
-#     feedsToUse: 'internal'
-#     vstsFeed: 'f8cb1790-dc3f-4180-a952-6f2ac74916a5/63c9d079-01f8-472c-9251-dfdf6e8b6e63'
-#     vstsFeedPackage: '628052a0-0f73-4ec8-bc01-9249ab495d2a'
-#     vstsPackageVersion: '0.0.2'
+- task: UniversalPackages@0
+  inputs:
+    command: 'download'
+    downloadDirectory: 'C:\Users\tsanduja\Desktop\jmeter dummy'
+    feedsToUse: 'internal'
+    vstsFeed: 'f8cb1790-dc3f-4180-a952-6f2ac74916a5/63c9d079-01f8-472c-9251-dfdf6e8b6e63'
+    vstsFeedPackage: '628052a0-0f73-4ec8-bc01-9249ab495d2a'
+    vstsPackageVersion: '0.0.2'
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-# - script: cd C:\Users\tsanduja\Desktop\ADO_Scripts
-#   displayName: 'change to scripts directory'
-
 - script: git pull origin main 
   displayName: 'pull the code'
-  # workingDirectory: 'C:\Users\tsanduja\Desktop\ADO_Scripts'
 
 - script: copy .\ C:\Users\tsanduja\Desktop\ADO_Scripts
   displayName: 'copy the code to required directory'
