@@ -32,7 +32,7 @@ steps:
   displayName: 'pull the code'
   # workingDirectory: 'C:\Users\tsanduja\Desktop\ADO_Scripts'
 
-- script: cp -r ~/. C:/Users/tsanduja/Desktop/ADO_Scripts
+- script: copy -r ~/. C:/Users/tsanduja/Desktop/ADO_Scripts
   displayName: 'copy the code to required directory'
 
 - script: |
