@@ -25,10 +25,10 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: cd C:\Users\tsanduja\Desktop\ADO Scripts
+- script: cd C:\Users\tsanduja\Desktop\ADO_Scripts
   displayName: 'change to scripts directory'
 
-- script: git pull origin main C:\Users\tsanduja\Desktop\ADO Scripts .
+- script: git pull origin main 
   displayName: 'pull the code'
 
 - script: |
