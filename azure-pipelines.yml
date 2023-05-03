@@ -13,14 +13,14 @@ pool:
     - agent.name -equals tsanduja
 
 steps:
-# - task: UniversalPackages@0
-#   inputs:
-#     command: 'download'
-#     downloadDirectory: 'C:\Users\tsanduja\Desktop\jmeter dummy'
-#     feedsToUse: 'internal'
-#     vstsFeed: 'f8cb1790-dc3f-4180-a952-6f2ac74916a5/63c9d079-01f8-472c-9251-dfdf6e8b6e63'
-#     vstsFeedPackage: '628052a0-0f73-4ec8-bc01-9249ab495d2a'
-#     vstsPackageVersion: '0.0.2'
+- task: UniversalPackages@0
+  inputs:
+    command: 'download'
+    downloadDirectory: 'C:\Users\tsanduja\Desktop\jmeter dummy'
+    feedsToUse: 'internal'
+    vstsFeed: 'f8cb1790-dc3f-4180-a952-6f2ac74916a5/63c9d079-01f8-472c-9251-dfdf6e8b6e63'
+    vstsFeedPackage: '628052a0-0f73-4ec8-bc01-9249ab495d2a'
+    vstsPackageVersion: '0.0.2'
 
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
@@ -32,7 +32,7 @@ steps:
   displayName: 'copy the code to required directory'
 
 - script: cd "C:\Users\tsanduja\Desktop\jmeter dummy\bin" && jmeter -n -t C:\Users\tsanduja\Desktop\ADO_Scripts\JMeter_Dummy_Script_1.jmx -l C:\Users\tsanduja\Desktop\Results\ADO_Demo.csv
-  displayName: 'copy the code to required directory'
+  displayName: 'Run the Script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
