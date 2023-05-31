@@ -31,7 +31,7 @@ steps:
 - script: copy .\ C:\Users\tsanduja\Desktop\ADO_Scripts
   displayName: 'copy the code to required directory'
 
-- script: cd "C:\Users\tsanduja\Desktop\jmeter dummy\bin" && jmeter -n -t C:\Users\tsanduja\Desktop\ADO_Scripts\SelectAnyPet_27Jul.jmx -l C:\Users\tsanduja\Desktop\Results\ADO_Demo.jtl -e -o reports
+- script: cd "C:\Users\tsanduja\Desktop\jmeter dummy\bin" && jmeter -n -t C:\Users\tsanduja\Desktop\ADO_Scripts\SelectAnyPet_27Jul.jmx -l C:\Users\tsanduja\Desktop\Results\ADO_Demo.jtl -e -o C:\Users\tsanduja\Desktop\Results
   displayName: 'Run the Script'
 
 - script: |
